@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coins Guardian</title>
+    <link 
+        rel="stylesheet" 
+        href="{{ url_for('static', filename='styles.css') }}"
+        >
+    <style>
+    </style>
+</head>
+<body>
+    <!-- Шапка -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo"></div>
+                <img src="C:\\Users\\Admin\\Desktop\\Учёба\\САЙТ макет.png" alt="">
+                <ul class="nav-links">
+                    <li><a href="#">Главная</a></li>
+                    <li><a href="#">Технологии</a></li>
+                    <li><a href="#">Решения</a></li>
+                    <li><a href="#">О нас</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="button-container">
+                    <a href="#" class="button login">Войти</a>
+                    <a href="#" class="button register">Регистрация</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Основной контент -->
+    <main>
+        <!-- Герой-секция -->
+        <div style="height: 80vh;">
+            <section class="hero">
+                <div class="container">
+                    <h1>Защищаем ваши криптоактивы с помощью новых технологий</h1>
+                    <p>Наша цель — обеспечить безопасность и эффективность работы с криптовалютами для пользователей и разработчиков.</p>
+                </div>
+            </section>
+            <div class="blurred-spot"></div>
+            <!-- Секция с призывом к действию -->
+            <section class="cta-section">
+                <div class="container">
+                    <a href="#" class="cta-button">Присоединиться</a>
+                </div>
+            </section>
+        </div>
+
+        <div class="container-wrapper">
+            <h1 class="who_h1">Кто мы?</h1>
+            <div class="content-wrapper">
+                <div class="left-section">
+                    <p class="subtitle">Защитите свои активы и упростите работу с криптовалютами</p>
+                </div>
+                <ul class="features">
+                    <li>Команда энтузиастов из Сибири</li>
+                    <li>Команда энтузиастов из Сибири</li>
+                    <li>Команда энтузиастов из Сибири</li>
+                </ul>
+            </div>
+        </div>
+        <!-- Залкпа с G -->
+        <div class="big_G">
+            <h1 class="title">Мы в цифрах</h1>
+            <!-- Контейнер с квадратами -->
+            <div class="container-sq">
+                <div class="box vertical-text"> <span class="large-text_glav"> 000002</span><br style="font-size: 16px;">Количество пользователей</div>
+                <div class="info-container">
+                    <div class="info-box">
+                        <span class="large-text">124.042</span> USDT
+                        <p>Собрано средств</p>
+                    </div>
+                    <div class="info-box small-box">
+                        <span class="large-text">4</span>
+                        <p>Количество сотрудников</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 style="text-align: center; margin-top: 3%; margin-bottom: 3%;">План развития</h1>
+        <div class="container-info-map">
+            <div class="roadmap-container">
+                <div class="line"></div>
+                <div class="roadmap">
+                    <div class="step" data-step="1">
+                        <div class="background"></div>
+                        <h2>Альфа тестирование</h2>
+                        <p>Описание альфа тестирования...</p>
+                    </div>
+                    <div class="step" data-step="2">
+                        <div class="background"></div>
+                        <h2>Дорабатывание Функционала</h2>
+                        <p>Описание процесса доработки...</p>
+                    </div>
+                    <div class="step" data-step="3">
+                        <div class="background"></div>
+                        <h2>Бета тестирование</h2>
+                        <p>Описание бета тестирования...</p>
+                    </div>
+                    <div class="step" data-step="4">
+                        <div class="background"></div>
+                        <h2>Дорабатывание Функционала</h2>
+                        <p>Описание второго этапа доработки...</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-section">
+                <div class="info-top">
+                    <div class="info-boxx">
+                        Проект находится на <br>
+                        <span>2 этап</span>
+                        <hr>
+                        CoinsGuardianBeta v.3.0.1.
+                    </div>
+                    <div class="milestones">
+                        <div class="milestone">
+                            Выход на веб-Платформу <br>
+                            <span>Январь 2026</span>
+                        </div>
+                        <div class="milestone">
+                            Мобильная версия <br>
+                            <span>Январь 2027</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="join-btn-container">
+                    <button class="join-btn">Присоединиться</button>
+                </div>
+            </div>
+        </div>
+        <div class="img-container">
+            <div class="left">
+                <img src="{{ url_for('static', filename='9400_2_07.jpg') }}"  alt="Левое фото">
+              </div>
+              <div class="right">
+                <div class="top-right">
+                  <img src="{{ url_for('static', filename='9400_2_07.jpg') }}" alt="Фото справа сверху 1">
+                  <img src="{{ url_for('static', filename='9400_2_07.jpg') }}" alt="Фото справа сверху 2">
+                </div>
+                <div class="bottom-right">
+                  <img src="{{ url_for('static', filename='9400_2_07.jpg') }}" alt="Фото сертификатов">
+                  <img src="{{ url_for('static', filename='9400_2_07.jpg') }}" alt="Групповое фото">
+                </div>
+              </div>
+        </div>
+
+    </main>
+    
+    <!-- Подвал -->
+    <footer>
+        <div class="container">
+            <ul class="footer-links">
+                <li><a href="#">Политика конфиденциальности</a></li>
+                <li><a href="#">Условия использования</a></li>
+                <li><a href="#">Поддержка</a></li>
+            </ul>
+            <p class="copyright">© 2025 Coins Guardian. Все права защищены.</p>
+        </div>
+    </footer>
+</body>
+</html>
